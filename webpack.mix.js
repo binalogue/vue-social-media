@@ -6,11 +6,15 @@ const mix = require('laravel-mix');
 
 mix
   .webpackConfig(() => ({
+    entry: path.resolve(__dirname, 'src/index.js'),
+    output: {
+      filename: 'dist/vue-social-media.js',
+      libraryTarget: 'umd',
+    },
     resolve: {
       extensions: ['.js', '.vue'],
       modules: ['src', 'node_modules'],
       alias: {
-        vue$: 'vue/dist/vue.runtime.esm.js',
         components: path.resolve(__dirname, 'src/components/'),
         helpers: path.resolve(__dirname, 'src/helpers/'),
       },
