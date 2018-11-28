@@ -1,23 +1,28 @@
 {
-  "name": "vue-socialmedia",
+  "name": "@mgoigfer/vue-social-media",
   "version": "0.1.0",
-  "private": true,
+  "description": "Vue component for social sharing.",
+  "main": "dist/vue-social-media.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --display-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run dev -- --watch",
+    "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
-  "dependencies": {
-    "vue": "^2.5.17"
+  "author": "Mikel Goig <m@mikelgoig.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgoigfer/vue-social-media"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.2.0",
-    "@vue/cli-plugin-eslint": "^3.2.0",
-    "@vue/cli-service": "^3.2.0",
-    "@vue/eslint-config-airbnb": "^4.0.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0-0",
-    "vue-template-compiler": "^2.5.17"
+    "cross-env": "^5.1",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-import-resolver-webpack": "^0.10.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-vue": "^4.7.1",
+    "laravel-mix": "^2.0",
+    "prettier-eslint": "^8.8.2",
+    "vue": "^2.5.17"
   }
 }
