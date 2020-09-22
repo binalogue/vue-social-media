@@ -2,6 +2,10 @@
 
 All notable changes to `vue-social-media` will be documented in this file.
 
+## 1.0.3 - 2020-09-22
+
+- 👷‍♂️ Fix publish action
+
 ## 1.0.2 - 2020-09-22
 
 - 👷‍♂️ Fix publish action
