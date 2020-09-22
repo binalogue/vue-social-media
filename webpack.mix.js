@@ -1,16 +1,28 @@
 /* global __dirname, path */
 /* eslint-disable import/no-extraneous-dependencies */
 
-require('dotenv').config();
 const mix = require('laravel-mix');
+
+/*
+ |--------------------------------------------------------------------------
+ | Mix Asset Management
+ |--------------------------------------------------------------------------
+ |
+ | Mix provides a clean, fluent API for defining some Webpack build steps
+ | for your Laravel application. By default, we are compiling the Sass
+ | file for the application as well as bundling up all the JS files.
+ |
+ */
 
 mix
   .webpackConfig(() => ({
     entry: path.resolve(__dirname, 'src/index.js'),
+
     output: {
       filename: 'dist/vue-social-media.js',
       libraryTarget: 'umd',
     },
+
     resolve: {
       extensions: ['.js', '.vue'],
       modules: ['src', 'node_modules'],
@@ -20,6 +32,7 @@ mix
       },
     },
   }))
+
   .js('src/index.js', 'dist/vue-social-media.js');
 
 /*
@@ -31,8 +44,8 @@ mix
 if (mix.inProduction()) {
   mix
     .options({
-      uglify: {
-        uglifyOptions: {
+      terser: {
+        terserOptions: {
           compress: {
             drop_console: true,
           },

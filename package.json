@@ -1,11 +1,12 @@
 {
-  "version": "0.2.0",
   "name": "@binalogue/vue-social-media",
+  "version": "1.0.0",
   "description": "Vue component for social sharing.",
   "main": "dist/vue-social-media.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --display-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run dev -- --watch",
+    "lint": "./node_modules/.bin/eslint --ext .js,.vue --fix src",
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "yarn dev --watch",
     "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "author": "Mikel Goig <mikel@binalogue.com>",
@@ -15,14 +16,14 @@
     "url": "git+https://github.com/binalogue/vue-social-media"
   },
   "devDependencies": {
-    "cross-env": "^5.1",
-    "eslint": "^5.6.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-import-resolver-webpack": "^0.10.1",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-vue": "^4.7.1",
-    "laravel-mix": "^2.0",
-    "prettier-eslint": "^8.8.2",
-    "vue": "^2.5.17"
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "laravel-mix": "^5.0.4",
+    "vue": "^2.6.11"
   }
 }
