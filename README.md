@@ -1,4 +1,4 @@
-# @mgoigfer/vue-social-media
+# @binalogue/vue-social-media
 
 A Vue component for social sharing.
 
@@ -7,7 +7,7 @@ A Vue component for social sharing.
 You can install this package via [npm](https://www.npmjs.com/):
 
 ```bash
-npm install @mgoigfer/vue-social-media -S
+npm install @binalogue/vue-social-media -S
 ```
 
 ## Usage

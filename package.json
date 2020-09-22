@@ -1,6 +1,6 @@
 {
-  "name": "@mgoigfer/vue-social-media",
   "version": "0.2.0",
+  "name": "@binalogue/vue-social-media",
   "description": "Vue component for social sharing.",
   "main": "dist/vue-social-media.js",
   "scripts": {
@@ -8,11 +8,11 @@
     "watch": "npm run dev -- --watch",
     "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
-  "author": "Mikel Goig <m@mikelgoig.com>",
+  "author": "Mikel Goig <mikel@binalogue.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mgoigfer/vue-social-media"
+    "url": "git+https://github.com/binalogue/vue-social-media"
   },
   "devDependencies": {
     "cross-env": "^5.1",
