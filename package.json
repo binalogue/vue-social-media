@@ -2,7 +2,7 @@
   "name": "@binalogue/vue-social-media",
   "version": "1.0.4",
   "description": "Vue component for social sharing.",
-  "main": "dist/vue-social-media.js",
+  "main": "dist/index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint --ext .js,.vue --fix src",
     "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",

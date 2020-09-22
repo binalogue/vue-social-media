@@ -19,7 +19,7 @@ mix
     entry: path.resolve(__dirname, 'src/index.js'),
 
     output: {
-      filename: 'dist/vue-social-media.js',
+      filename: 'dist/index.js',
       libraryTarget: 'umd',
     },
 
@@ -33,7 +33,7 @@ mix
     },
   }))
 
-  .js('src/index.js', 'dist/vue-social-media.js');
+  .js('src/index.js', 'dist/index.js');
 
 /*
  |--------------------------------------------------------------------------
