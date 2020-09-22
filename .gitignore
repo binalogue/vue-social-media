@@ -1,3 +1,4 @@
+dist/
 node_modules/
 .DS_Store
 mix-manifest.json
