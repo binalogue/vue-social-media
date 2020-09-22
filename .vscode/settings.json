@@ -1,0 +1,89 @@
+{
+  /**************************************************************************
+   * Languages
+   *************************************************************************/
+
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[vue]": {
+    "editor.formatOnSave": false
+  },
+  "[vue-html]": {
+    "editor.formatOnSave": false
+  },
+
+  // Disable [js] built-in linters to prevent from reporting the same errors
+  // than the [eslint] extension.
+  "javascript.format.enable": false,
+
+  /**************************************************************************
+   * Text Editor
+   *************************************************************************/
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll": false,
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": false,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+
+  /**************************************************************************
+   * Extensions
+   *************************************************************************/
+
+  /* Emmet */
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "vue": "html"
+  },
+  "emmet.showAbbreviationSuggestions": true,
+  "emmet.showExpandedAbbreviation": "always",
+
+  /*
+   * ESLint (dbaeumer.vscode-eslint)
+   *
+   * See:
+   * - https://eslint.vuejs.org/user-guide/#visual-studio-code
+   */
+  "eslint.alwaysShowStatus": true,
+  "eslint.enable": true,
+  "eslint.format.enable": true,
+  "eslint.options": {
+    "extensions": [".js", ".vue"]
+  },
+  "eslint.packageManager": "yarn",
+  "eslint.run": "onType",
+  // Enable validation for `.vue` files.
+  "eslint.validate": ["javascript", "vue"],
+  "eslint.workingDirectories": ["src"],
+
+  /* Material Icon Theme (pkief.material-icon-theme) */
+  "material-icon-theme.activeIconPack": "vue_vuex",
+
+  /* Vetur (octref.vetur) */
+  "vetur.completion.autoImport": true,
+  "vetur.completion.tagCasing": "kebab",
+  "vetur.format.defaultFormatter.css": "none",
+  "vetur.format.defaultFormatter.html": "none",
+  "vetur.format.defaultFormatter.js": "none",
+  "vetur.format.defaultFormatter.scss": "none",
+  "vetur.format.enable": false,
+  "vetur.format.options.tabSize": 2,
+  "vetur.format.options.useTabs": false,
+  "vetur.format.scriptInitialIndent": false,
+  "vetur.format.styleInitialIndent": false,
+  // As we already have our own `eslint` config, we have to disable default Vetur
+  // script validation.
+  "vetur.validation.script": false,
+  // As we already have our own `stylelint` config, we have to disable default
+  // Vetur script validation.
+  "vetur.validation.style": false,
+  // As we already have our own `eslint-plugin-vue` config, we have to disable
+  // default Vetur template validation.
+  "vetur.validation.template": false
+}
