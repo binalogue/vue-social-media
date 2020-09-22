@@ -7,7 +7,8 @@
     "lint": "./node_modules/.bin/eslint --ext .js,.vue --fix src",
     "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "yarn dev --watch",
-    "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prepare": "yarn prod"
   },
   "author": "Mikel Goig <mikel@binalogue.com>",
   "license": "MIT",
