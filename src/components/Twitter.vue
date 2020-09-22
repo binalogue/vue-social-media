@@ -1,6 +1,6 @@
 <template>
   <span @click="twitterLink(url, { text })">
-    <slot/>
+    <slot />
   </span>
 </template>
 
@@ -9,8 +9,6 @@
 import { objectToGetParams } from 'helpers';
 
 export default {
-  name: 'Twitter',
-
   props: {
     text: {
       type: String,
@@ -24,16 +22,13 @@ export default {
   },
 
   methods: {
-    twitterLink(url, {
-      text,
-    }) {
+    twitterLink(url, { text }) {
       window.open(
-        `https://www.twitter.com/share${
-          objectToGetParams({
-            url,
-            text,
-          })}`,
-        '__blank',
+        `https://www.twitter.com/share${objectToGetParams({
+          url,
+          text,
+        })}`,
+        '__blank'
       );
     },
   },

@@ -1,6 +1,6 @@
 <template>
   <span @click="whatsappLink(url, text)">
-    <slot/>
+    <slot />
   </span>
 </template>
 
@@ -9,8 +9,6 @@
 import { objectToGetParams } from 'helpers';
 
 export default {
-  name: 'WhatsApp',
-
   props: {
     text: {
       type: String,
@@ -26,11 +24,10 @@ export default {
   methods: {
     whatsappLink(url, text) {
       window.open(
-        `https://api.whatsapp.com/send${
-          objectToGetParams({
-            text: text ? `${text} ${url}` : url,
-          })}`,
-        '__blank',
+        `https://api.whatsapp.com/send${objectToGetParams({
+          text: text ? `${text} ${url}` : url,
+        })}`,
+        '__blank'
       );
     },
   },

@@ -1,6 +1,6 @@
 <template>
   <span @click="facebookLink(url)">
-    <slot/>
+    <slot />
   </span>
 </template>
 
@@ -9,8 +9,6 @@
 import { objectToGetParams } from 'helpers';
 
 export default {
-  name: 'Facebook',
-
   props: {
     url: {
       type: String,
@@ -21,11 +19,10 @@ export default {
   methods: {
     facebookLink(url) {
       window.open(
-        `https://www.facebook.com/sharer/sharer.php${
-            objectToGetParams({
-            u: url,
-          })}`,
-        '__blank',
+        `https://www.facebook.com/sharer/sharer.php${objectToGetParams({
+          u: url,
+        })}`,
+        '__blank'
       );
     },
   },
