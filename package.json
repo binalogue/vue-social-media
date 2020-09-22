@@ -1,6 +1,6 @@
 {
   "name": "@binalogue/vue-social-media",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Vue component for social sharing.",
   "main": "dist/vue-social-media.js",
   "scripts": {
