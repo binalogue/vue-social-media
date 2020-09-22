@@ -2,9 +2,11 @@
 
 All notable changes to `vue-social-media` will be documented in this file.
 
-## 0.2.1 - 2018-11-28
+## 1.0.0 - 2020-09-22
 
-- //
+- 📝 Update README
+- 🔧 Update development env
+- 🔧 Update package name
 
 ## 0.2.0 - 2018-11-28
 
